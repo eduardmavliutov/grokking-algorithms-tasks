@@ -16,11 +16,11 @@ describe('graphs tests', () => {
     expect(breadthFirstSearch(graph, 'ryan', 'tom')).toEqual(['ryan', 'bob', 'clair','alice', 'anuj', 'peggy', 'jonny', 'tom'])
   })
 
-  test('breadthFirstSearch returns if the target node doesn\'t exist in a graph', () => {
+  test('breadthFirstSearch returns null if the target node doesn\'t exist in a graph', () => {
     expect(breadthFirstSearch(graph, 'ryan', 'ben')).toBe(null)
   })
 
-  test('breadthFirstSearch returns if the start node doesn\'t exist in a graph', () => {
+  test('breadthFirstSearch returns null if the start node doesn\'t exist in a graph', () => {
     expect(breadthFirstSearch(graph, 'harry', 'tom')).toBe(null)
   })
 })
